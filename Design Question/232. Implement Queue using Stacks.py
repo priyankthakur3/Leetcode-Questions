@@ -1,10 +1,17 @@
+# Time Complexity
+# push: O(1)
+# pop: O(n) worst case, otherwise O(1)
+# peek: O(n) worst case, otherwise O(1)
 class MyQueue:
 
+    # all input will fall in input
+    # all peek and pop will occur from output stack
     def __init__(self):
         self.input = []
         self.output = []
 
     def push(self, x: int) -> None:
+        # accept into input
         self.input.append(x)
 
     def pop(self) -> int:
@@ -12,8 +19,10 @@ class MyQueue:
         return self.output.pop()
 
     def peek(self) -> int:
-        while len(self.input) != 0:
-            self.output.append(self.input.pop())
+        # check if output stack is empty if yes move all content from input to output
+        if len(self.output) == 0:
+            while len(self.input) != 0:
+                self.output.append(self.input.pop())
         return self.output[-1]
 
     def empty(self) -> bool:

@@ -1,3 +1,6 @@
+# Time Complexity: O(V*(V + K))
+# Space Complexity: O(V) : V => Vertices K => No of edges
+
 from collections import defaultdict
 
 

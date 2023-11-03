@@ -1,3 +1,3 @@
 # Leetcode Questions
 
-Leetcode questions 
+Leetcode questions by type

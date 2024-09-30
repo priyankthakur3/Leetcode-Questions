@@ -1,3 +1,3 @@
 # Leetcode Questions
 
-Leetcode questions by type
+Leetcode questions Solutions by Me 
